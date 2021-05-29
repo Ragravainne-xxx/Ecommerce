@@ -1,0 +1,418 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.header{
+    padding: 20px;
+}
+
+.inner-header{
+    width: 1000px;
+    height: 100%;
+}
+
+.logo-container{
+    padding-left: 0;
+    height: 100%;
+}
+
+.logo-container a{
+    text-decoration: none;
+}
+
+.logo-container h1{
+    color: #565656;
+    height: 100%;
+    text-align: left;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo-container h1 span{
+    font-weight: 900;
+}
+
+.menu_container{
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+}
+.menu{
+    display: flex;
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.search-btn {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%, 0%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0;
+}
+.search-box:hover > .search-text{
+    width: 200px;
+    padding: 0 15px;
+}
+.search-box:hover > .search-btn{
+    background: #DFD5CC;
+}
+.search-box:hover{
+    background: #565656;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #ffffff;
+    font-size: 14px;
+    transition: .4s;
+    line-height: 40px;
+    width: 0px;
+}
+.navigation{
+    width: 1000px;
+    padding: 0;
+    text-align: left;
+}
+.navigation a{
+    height: 100;    
+    padding: 0px 20px;
+    text-decoration: none;
+}
+.navigation a:first-child{
+    padding-left: 5px;
+}
+.navigation a li{
+    display: inline-flex;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;  
+}
+.navigation a li:hover{
+    background-color: #ffffff;
+    color: #DFD5CC;
+}
+.navigation a:hover, a:active{
+    text-decoration: underline;
+    color: #DFD5CC;
+}
+
+.body{
+    width:1000px;
+    padding-top: 40px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+.featured-container {
+	width: 1000px;
+	height: auto;
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280ox, 1fr));
+	grid-gap: 2px;
+	padding: 5px;
+	align-items: center;
+	border: 1px solid #DFD5CC;
+	border-top-color: white;
+	border-bottom-color: white;
+	display: flex;
+	flex-direction: row;
+
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px); 
+}
+
+.box img { 
+	border-radius: 15px;
+}
+.box img src{
+    width: 200;
+    height: 200;
+}
+.box:hover {
+	transform: scale(1.1);
+	z-index: 2;
+	box-shadow: 2px solid #DFD5CC 
+}
+
+.footer-container{
+    padding:30px;
+    padding-top: 50px;
+    background-color: #DFD5CC;
+    margin-top: 100px;
+}
+.inner-footer{
+    width: 1000px;
+    height: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: initial;
+    margin: 0 auto;
+}
+
+.logo-footer h1{
+    color: #565656;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 200;
+}
+.logo-footer h1 span{
+    font-weight: 900;
+}
+.about-content{
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 2;
+}
+.nav-footer-container{
+    width: 1000px;
+    height: 100%;
+}
+.nav-footer{
+    padding-top: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+.nav-footer a li {
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-footer a:link, a:visited{
+    text-decoration: none;
+    color: #565656;
+}
+.nav-footer a:hover, a:active{
+    text-decoration: underline;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    width: 25%;
+    float: left;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {background-color: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header {background-color: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header {background-color: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header {background-color: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header {background-color: #DFD5CC;}
+}
+
+
+.logout {
+    float: right;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #565656;
+    background-color: #DFD5CC;
+}
+.logout:hover{
+    transform: scale(1.1);
+	z-index: 2;
+	box-shadow: 2px solid #DFD5CC 
+}
+.logout:active{
+    box-shadow: 0px 0px #666;
+    transform: translateX(2px);
+}
+
+/*admin login page */
+.error {
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+}
+.admin-logo{
+    color: #565656;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.form-body{
+    width:700px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
